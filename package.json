@@ -1,0 +1,31 @@
+{
+  "name": "reactjs-setup-v2",
+  "version": "1.0.0",
+  "description": "simple set up example of a react js app",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-app:dev",
+    "build-app:dev": "webpack -d && cp src/app/index.html dist/index.html && webpack-dev-server --content-base dist/ --inline --hot",
+    "build-app:prod": "webpack -p && cp src/app/index.html dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@jtyler-dev:jtyler-dev/reactjs-setup-v2.git"
+  },
+  "author": "jtyler",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
